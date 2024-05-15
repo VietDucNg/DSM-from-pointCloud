@@ -253,6 +253,15 @@ par(mfrow = c(1,3)) # create a 1 row x 3 column plotting matrix
 plot(dtm, main='DTM')
 plot(dsm, main='DSM')
 plot(chm, main='CHM')
+```
+```{r}
+# save the plot
+png('images/05_overview.png', width = 1500, height = 500, res = 200)
+par(mfrow = c(1,3)) # create a 1 row x 3 column plotting matrix
+plot(dtm, main='DTM')
+plot(dsm, main='DSM')
+plot(chm, main='CHM')
+dev.off()
 
 ```
 
